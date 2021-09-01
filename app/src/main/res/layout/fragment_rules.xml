@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_blured"
+    android:splitMotionEvents="false"
+    tools:context=".Rules">
+
+
+    <ImageButton
+        android:id="@+id/rulesBackButton"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerInside"
+        android:src="@drawable/back_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97" />
+
+    <ImageView
+        android:id="@+id/rules_text_bg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:rotation="-90"
+        android:rotationY="180"
+        android:src="@drawable/rules_text_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <ImageView
+        android:id="@+id/rulesBG"
+        android:layout_width="375dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/score"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rulesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="@string/rules"
+        android:textColor="#B11A237E"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/rules_text_bg"
+        app:layout_constraintEnd_toEndOf="@+id/rules_text_bg"
+        app:layout_constraintStart_toStartOf="@+id/rules_text_bg"
+        app:layout_constraintTop_toTopOf="@+id/rules_text_bg" />
+
+    <TextView
+        android:id="@+id/score1000points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="@string/score_1000_points"
+        android:textColor="#B11A237E"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/rulesBG"
+        app:layout_constraintEnd_toEndOf="@+id/rulesBG"
+        app:layout_constraintStart_toStartOf="@+id/rulesBG"
+        app:layout_constraintTop_toTopOf="@+id/rulesBG"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/puck1"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/puck_standard"
+        app:layout_constraintBottom_toBottomOf="@+id/rulesBG"
+        app:layout_constraintEnd_toEndOf="@+id/rulesBG"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/score1000points"
+        app:layout_constraintTop_toBottomOf="@+id/score1000points"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/text_1_10points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 - 10 POINTS"
+        android:textColor="#B11A237E"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/puck1"
+        app:layout_constraintEnd_toEndOf="@+id/score1000points"
+        app:layout_constraintStart_toEndOf="@+id/puck1"
+        app:layout_constraintTop_toTopOf="@+id/puck1" />
+
+    <ImageView
+        android:id="@+id/puck2"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/puck"
+        app:layout_constraintBottom_toBottomOf="@+id/rulesBG"
+        app:layout_constraintEnd_toEndOf="@+id/puck1"
+        app:layout_constraintStart_toStartOf="@+id/puck1"
+        app:layout_constraintTop_toBottomOf="@+id/puck1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/text_10_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10 POINTS"
+        android:textColor="#B11A237E"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/puck2"
+        app:layout_constraintEnd_toEndOf="@+id/score1000points"
+        app:layout_constraintStart_toEndOf="@+id/puck2"
+        app:layout_constraintTop_toTopOf="@+id/puck2" />
+
+    <ImageView
+        android:id="@+id/puck3"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/puck_golden"
+        app:layout_constraintBottom_toBottomOf="@+id/rulesBG"
+        app:layout_constraintEnd_toEndOf="@+id/puck2"
+        app:layout_constraintStart_toStartOf="@+id/puck2"
+        app:layout_constraintTop_toBottomOf="@+id/puck2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/text_25_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="25 POINTS"
+        android:textColor="#B11A237E"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/puck3"
+        app:layout_constraintEnd_toEndOf="@+id/score1000points"
+        app:layout_constraintStart_toEndOf="@+id/puck3"
+        app:layout_constraintTop_toTopOf="@+id/puck3" />
+
+    <ImageView
+        android:id="@+id/dynamiteRules"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:rotation="90"
+        android:rotationX="180"
+        android:scaleX="1.5"
+        android:scaleY="1.4"
+        android:src="@drawable/dynamite"
+        app:layout_constraintBottom_toBottomOf="@+id/rulesBG"
+        app:layout_constraintEnd_toEndOf="@+id/puck3"
+        app:layout_constraintStart_toStartOf="@+id/puck3"
+        app:layout_constraintTop_toBottomOf="@+id/puck3"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/text_resetPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ALL POINTS TO 0"
+        android:textColor="#B11A237E"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/dynamiteRules"
+        app:layout_constraintEnd_toEndOf="@+id/score1000points"
+        app:layout_constraintStart_toEndOf="@+id/dynamiteRules"
+        app:layout_constraintTop_toTopOf="@+id/dynamiteRules" />
+
+    <ImageView
+        android:id="@+id/blackRules"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="38dp"
+        android:scaleX="1.5"
+        android:scaleY="1.4"
+        android:src="@drawable/bomb"
+        android:translationX="6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rulesBG"
+        app:layout_constraintEnd_toEndOf="@+id/dynamiteRules"
+        app:layout_constraintStart_toStartOf="@+id/dynamiteRules"
+        app:layout_constraintTop_toBottomOf="@+id/dynamiteRules"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/text_gameOver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GAME OVER"
+        android:textColor="#B11A237E"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/blackRules"
+        app:layout_constraintEnd_toEndOf="@+id/score1000points"
+        app:layout_constraintStart_toEndOf="@+id/blackRules"
+        app:layout_constraintTop_toTopOf="@+id/blackRules" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

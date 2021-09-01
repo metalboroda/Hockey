@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Hockey</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="YouScore"><font fgcolor="#FFDD2C00">You - </font></string>
+    <string name="scoreboard"><u>SCOREBOARD</u></string>
+    <string name="rules">Rules</string>
+    <string name="score_1000_points"><u>SCORE 1000 POINTS</u></string>
+    <string name="service_name">service_name</string>
+
+    <string-array name="playersList">
+        <item>James M</item>
+        <item>Robert P</item>
+        <item>John J</item>
+        <item>Steven K</item>
+        <item>Edward D</item>
+        <item>Paul E</item>
+        <item>Jeffrey L</item>
+        <item>Michael M</item>
+        <item>William E</item>
+        <item>David B</item>
+        <item>Richard S</item>
+        <item>Ronald R</item>
+        <item>Andrew D</item>
+        <item>Richard S</item>
+        <item>Joseph J</item>
+        <item>Thomas S</item>
+        <item>Joseph J</item>
+        <item>Timothy R</item>
+        <item>Joshua M</item>
+        <item>Thomas S</item>
+        <item>Charles K</item>
+        <item>Christopher N</item>
+        <item>Daniel L</item>
+        <item>Jason S</item>
+        <item>Kenneth D</item>
+    </string-array>
+</resources>

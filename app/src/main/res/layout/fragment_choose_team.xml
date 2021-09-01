@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chooseTeamParrentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_blured"
+    android:splitMotionEvents="false"
+    tools:context=".ChooseTeam">
+
+    <ImageView
+        android:id="@+id/chooseYourTeamTextBG"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:rotation="90"
+        android:rotationX="180"
+        android:scaleY="2.1"
+        android:src="@drawable/rules_text_bg"
+        app:layout_constraintBottom_toBottomOf="@+id/chooseYourTeamText"
+        app:layout_constraintEnd_toEndOf="@+id/chooseYourTeamText"
+        app:layout_constraintStart_toStartOf="@+id/chooseYourTeamText"
+        app:layout_constraintTop_toTopOf="@+id/chooseYourTeamText"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/chooseYourTeamText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHOOSE YOUR TEAM"
+        android:textColor="#B11A237E"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/chooseTeamParrentLayout"
+        app:layout_constraintStart_toStartOf="@id/chooseTeamParrentLayout"
+        app:layout_constraintTop_toTopOf="@id/chooseTeamParrentLayout"
+        app:layout_constraintVertical_bias="0.05"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/teamChooseLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="109dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/team1"
+                android:layout_width="160dp"
+                android:layout_height="90dp"
+                android:layout_marginEnd="25dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/team1"
+                tools:ignore="ContentDescription" />
+
+            <ImageButton
+                android:id="@+id/team2"
+                android:layout_width="160dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/team2"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout1"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout1">
+
+            <ImageButton
+                android:id="@+id/team3"
+                android:layout_width="160dp"
+                android:layout_height="90dp"
+                android:layout_marginEnd="25dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/team3"
+                tools:ignore="ContentDescription" />
+
+            <ImageButton
+                android:id="@+id/team4"
+                android:layout_width="160dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/team4"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+            <ImageButton
+                android:id="@+id/team5"
+                android:layout_width="160dp"
+                android:layout_height="90dp"
+                android:layout_marginEnd="25dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/team5"
+                tools:ignore="ContentDescription" />
+
+            <ImageButton
+                android:id="@+id/team6"
+                android:layout_width="160dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/team6"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout5"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+            <ImageButton
+                android:id="@+id/team7"
+                android:layout_width="160dp"
+                android:layout_height="90dp"
+                android:layout_marginEnd="25dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/team7"
+                tools:ignore="ContentDescription" />
+
+            <ImageButton
+                android:id="@+id/team8"
+                android:layout_width="160dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/team8"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+            <ImageButton
+                android:id="@+id/team9"
+                android:layout_width="160dp"
+                android:layout_height="90dp"
+                android:layout_marginEnd="25dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/team9"
+                tools:ignore="ContentDescription" />
+
+            <ImageButton
+                android:id="@+id/team10"
+                android:layout_width="160dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/team10"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/chooseTeamBackButton"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerInside"
+        android:src="@drawable/back_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/teamChooseLayout"
+        app:layout_constraintVertical_bias="0.97"
+        tools:ignore="ContentDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_blured"
+    android:splitMotionEvents="false"
+    tools:context=".EndGame">
+
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:src="@drawable/back_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageReferee"
+        android:layout_width="150dp"
+        android:layout_height="320dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:src="@drawable/referee"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/yourScoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YOUR SCORE"
+        android:textColor="#FFFFFF"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.20"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <TextView
+        android:id="@+id/scoreResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="42dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yourScoreText"
+        app:layout_constraintVertical_bias="0.04"
+        tools:ignore="SpUsage" />
+
+    <ImageView
+        android:id="@+id/scoreboardImage"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:scaleX="1.20"
+        android:scaleY="1.3"
+        android:src="@drawable/score"
+        android:translationX="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.66"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/scoreboardText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="1.20"
+        android:scaleY="1.20"
+        android:text="@string/scoreboard"
+        android:textColor="#B11A237E"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/scoreboardImage"
+        app:layout_constraintEnd_toEndOf="@+id/scoreboardImage"
+        app:layout_constraintStart_toStartOf="@+id/scoreboardImage"
+        app:layout_constraintTop_toTopOf="@+id/scoreboardImage"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpUsage" />
+
+    <ImageView
+        android:id="@+id/flagImage"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02"
+        tools:ignore="ContentDescription" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/scoreboardRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/scoreboardImage"
+        app:layout_constraintEnd_toEndOf="@+id/scoreboardImage"
+        app:layout_constraintStart_toStartOf="@+id/scoreboardImage"
+        app:layout_constraintTop_toBottomOf="@+id/scoreboardText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
